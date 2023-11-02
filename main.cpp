@@ -1,4 +1,5 @@
-#include <cuda.h>
+#include <iostream>
+#include <cuda_runtime.h>
 
 // Kernel para realizar la suma de vectores en la GPU
 __global__ void vectorAddKernel(float* d_A, float* d_B, float* d_C, int n) {
